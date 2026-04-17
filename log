@@ -26,3 +26,13 @@ hashmap.c:84:36: error: expected expression before ‘break’
    84 |         if(inicio == start) return break;
       |                                    ^~~~~
 1eac4af
+Fri Apr 17 07:00:55 PM UTC 2026: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+hashmap.c: In function ‘searchMap’:
+hashmap.c:84:37: error: expected expression before ‘break’
+   84 |         if(inicio == indice) return break;
+      |                                     ^~~~~
+36b0c3a
