@@ -36,3 +36,9 @@ hashmap.c:84:37: error: expected expression before ‘break’
    84 |         if(inicio == indice) return break;
       |                                     ^~~~~
 36b0c3a
+Fri Apr 17 07:01:10 PM UTC 2026: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  3|6
+total_score: 10/60
+e665338

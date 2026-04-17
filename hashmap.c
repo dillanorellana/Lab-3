@@ -81,7 +81,7 @@ Pair * searchMap(HashMap * map,  char * key) {
             return map->buckets[indice];
         }
         indice++;
-        if(inicio == indice) return break;
+        if(inicio == indice) break;
     }
     return NULL;
 }
