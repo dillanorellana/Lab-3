@@ -1,0 +1,14 @@
+Fri Apr 17 07:00:13 PM UTC 2026: 
+ hashmap.c | 14 ++++++++++++++
+ 1 file changed, 14 insertions(+)
+Compilation failed
+In file included from test.c:5:
+hashmap.c: In function ‘searchMap’:
+hashmap.c:76:5: error: expected ‘,’ or ‘;’ before ‘while’
+   76 |     while(map->buckets[indice]!=NULL)
+      |     ^~~~~
+hashmap.c:74:10: error: unused variable ‘inicio’ [-Werror=unused-variable]
+   74 |     long inicio = indice
+      |          ^~~~~~
+cc1: all warnings being treated as errors
+0fe9c6a
