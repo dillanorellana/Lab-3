@@ -71,7 +71,7 @@ void insertMap(HashMap * map, char * key, void * value) {
 
 Pair * searchMap(HashMap * map,  char * key) {   
     long indice = hash(key,map->capacity);
-    long inicio = indice
+    long inicio = indice;
 
     while(map->buckets[indice]!=NULL)
     {
@@ -83,9 +83,6 @@ Pair * searchMap(HashMap * map,  char * key) {
         indice++;
         if(inicio == start) return break;
     }
-    
-    
-
     return NULL;
 }
 
