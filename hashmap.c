@@ -101,7 +101,6 @@ Pair * searchMap(HashMap * map,  char * key) {
     if(map->capacity == 0) return NULL;
     
     long indice = hash(key,map->capacity);
-    long inicio = indice;
 
     while(map->buckets[indice]!=NULL)
     {
@@ -111,7 +110,6 @@ Pair * searchMap(HashMap * map,  char * key) {
             return map->buckets[indice];
         }
         indice= (indice+1)%map->capacity;
-        if(inicio == indice) break;
     }
     return NULL;
 }
