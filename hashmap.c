@@ -70,7 +70,20 @@ HashMap * createMap(long capacity) {
 // No inserte claves repetidas. Recuerde que el arreglo es circular. Recuerde actualizar la variable size.
 
 void insertMap(HashMap * map, char * key, void * value) {
+    long posicion = hash(key,map->capacity);
 
+
+    while(map->buckets[posicion]!=NULL)
+    {
+        if(is_equal(map->buckets[posicion]->key,key) return;
+
+        posicion++;
+    }
+    map->buckets[posicion] = createPair(key,value);
+    map->size++;
+    map->current = posicion;
+    return;
+    
 }
 
 // 3. Implemente la función Pair * searchMap(HashMap * map, char * key), la cual retorna el Pair asociado a la clave ingresada. 
