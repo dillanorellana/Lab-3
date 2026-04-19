@@ -77,12 +77,13 @@ void insertMap(HashMap * map, char * key, void * value) {
     {
         if(is_equal(map->buckets[posicion]->key,key)) return;
 
-        posicion= posicion +1 % map->capacity;
+        if(map->buckets[posicion]->key == NULL) break;
+
+        posicion++;
     }
     map->buckets[posicion] = createPair(key,value);
     map->size++;
     map->current = posicion;
-    return;
     
 }
 
