@@ -123,3 +123,14 @@ Sun Apr 19 11:55:45 PM UTC 2026:
  tests:  8|3
 total_score: 30/60
 98c749b
+Mon Apr 20 12:13:47 AM UTC 2026: 
+ hashmap.c | 12 ++++++++++++
+ 1 file changed, 12 insertions(+)
+Compilation failed
+In file included from test.c:5:
+hashmap.c: In function ‘eraseMap’:
+hashmap.c:129:34: error: ‘map->buckets’ is a pointer to pointer; did you mean to dereference it before applying ‘->’ to it?
+  129 |             is_equal(map->buckets->key,key)){
+      |                                  ^~
+      |                      (*          )
+07dee1b
