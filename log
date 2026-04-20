@@ -196,3 +196,15 @@ hashmap.c:185:10: error: unused variable ‘old_capacity’ [-Werror=unused-vari
       |          ^~~~~~~~~~~~
 cc1: all warnings being treated as errors
 5253a24
+Mon Apr 20 12:29:34 AM UTC 2026: 
+ hashmap.c | 1 -
+ 1 file changed, 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+hashmap.c: In function ‘enlarge’:
+hashmap.c:193:12: error: ‘old_bucket’ undeclared (first use in this function); did you mean ‘old_buckets’?
+  193 |         if(old_bucket[i] == NULL) continue;
+      |            ^~~~~~~~~~
+      |            old_buckets
+hashmap.c:193:12: note: each undeclared identifier is reported only once for each function it appears in
+5790129
