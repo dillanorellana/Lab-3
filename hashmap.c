@@ -181,7 +181,21 @@ Pair * nextMap(HashMap * map) {
 void enlarge(HashMap * map) {
     enlarge_called = 1; //no borrar (testing purposes)
 
+    Pair ** old_buckets = map->buckets;
+    long old_capacity = map->capacity;
 
+    map->capacity = map->capacity *2;
+
+    map->buckets = (Pair**) malloc(sizeof(Pair*)*map->capacity);
+    map->size=0;
+
+    for(int i=0;i<map->capacity;i++)
+    {
+        if(old_bucket[i] == NULL) continue;
+        insertMap(map, old_buckets[i]->key, old_buckets[i]->value);
+    }
+        
+    
 }
 
 
