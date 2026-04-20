@@ -157,3 +157,14 @@ Mon Apr 20 12:20:17 AM UTC 2026:
  tests:  13|2
 total_score: 40/60
 bef92de
+Mon Apr 20 12:22:07 AM UTC 2026: 
+ hashmap.c | 9 ++++++++-
+ 1 file changed, 8 insertions(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+hashmap.c: In function ‘nextMap’:
+hashmap.c:158:15: error: ‘current’ undeclared (first use in this function)
+  158 |     for(int i=current;i<map->capacity;i++)
+      |               ^~~~~~~
+hashmap.c:158:15: note: each undeclared identifier is reported only once for each function it appears in
+7870b6d
